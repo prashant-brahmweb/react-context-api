@@ -1,20 +1,19 @@
-import useUser from "../useUser";
+import useUser from "../../../useUser";
 import { NavLink } from "react-router-dom";
 
-const Profile = () => {
+const NestedComponent = () => {
   const { user } = useUser();
 
   return (
     <div>
-      <h1>Profile</h1>
+      <h1>Nested Component</h1>
       <ul>
         {user.map((users) => (
           <li key={users.username}>{users.username}</li>
         ))}
       </ul>
       <NavLink to="/"> Back to Home </NavLink>
-      <NavLink to="/nested-component"> Nested Component </NavLink>
     </div>
   );
 };
-export default Profile;
+export default NestedComponent;

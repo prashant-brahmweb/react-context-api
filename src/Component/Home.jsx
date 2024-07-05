@@ -14,6 +14,7 @@ const Home = () => {
         ))}
       </ul>
       <NavLink to="/profile" > Go to profile </NavLink>
+      <NavLink to="/nested-component"> Nested Component </NavLink>
     </div>
   );
 };
